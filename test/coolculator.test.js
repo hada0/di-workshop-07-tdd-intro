@@ -27,4 +27,9 @@ describe('Coolculator', function() {
     result = mm.divide(63, 7)
     expect(result).to.equal(9)
   })
+
+  it('should double', function() {
+    result = mm.double(4)
+    expect(result).to.equal(8)
+  })
 })
