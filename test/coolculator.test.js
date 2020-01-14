@@ -18,8 +18,13 @@ describe('Coolculator', function() {
   })
 
   // Uncomment this 👇
-  // it('should subtract', function() {
-  //   result = mm.subtract(3, 2)
-  //   expect(result).to.equal(1)
-  // })
+  it('should subtract', function() {
+    result = mm.subtract(3, 2)
+    expect(result).to.equal(1)
+  })
+
+  it('should divide', function() {
+    result = mm.divide(63, 7)
+    expect(result).to.equal(9)
+  })
 })
