@@ -16,4 +16,18 @@ describe('Array', function() {
       expect(array.length).to.equal(5)
     })
   })
+
+  describe('#pop()', function() {
+    it('should remove last item from the array', function() {
+      var array = [1, 2, 3, 4]
+      array.pop()
+      expect(array).to.deep.equal([1, 2, 3])
+    })
+
+    it ('should alter the length properly', function() {
+      var array = [1, 2, 3, 4]
+      array.pop()
+      expect(array).to.deep.equal([1, 2, 3])
+    })
+  })
 })
