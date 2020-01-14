@@ -32,4 +32,9 @@ describe('Coolculator', function() {
     result = mm.double(4)
     expect(result).to.equal(8)
   })
+
+  it('should take the lowest number', function() {
+    result = mm.lowest(11, 55)
+    expect(result).to.equal(11)
+  })
 })
